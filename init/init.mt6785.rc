@@ -300,6 +300,11 @@ on post-fs-data
 
     setprop vold.post_fs_data_done 1
 
+on early-boot
+    # Dolby
+    mkdir /data/vendor/dolby 0770 media media
+    mkdir /data/vendor/multimedia 0775 system system
+
 on boot
     # LEDs
     chmod 0664 /sys/class/leds/lcd-backlight/brightness
