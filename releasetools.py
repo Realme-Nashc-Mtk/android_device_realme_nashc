@@ -8,19 +8,19 @@ import common
 BLOCK_DEV_PATH = "/dev/block/by-name/"
 
 FIRMWARE_IMAGES = {
-  "audio_dsp.img": ["audio_dsp"],
-  "cam_vpu1.img": ["cam_vpu1"],
-  "cam_vpu2.img": ["cam_vpu2"],
-  "cam_vpu3.img": ["cam_vpu3"],
-  "gz.img": ["gz1", "gz2"],
-  "lk.img": ["lk", "lk2"],
-  "logo.img": ["logo"],
-  "md1img.img": ["md1img"],
-  "preloader.img": ["preloader", "preloader_backup"],
-  "scp.img": ["scp1", "scp2"],
-  "spmfw.img": ["spmfw"],
-  "sspm.img": ["sspm_1", "sspm_2"],
-  "tee.img": ["tee1", "tee2"]
+#  "audio_dsp.img": ["audio_dsp"],
+#  "cam_vpu1.img": ["cam_vpu1"],
+#  "cam_vpu2.img": ["cam_vpu2"],
+#  "cam_vpu3.img": ["cam_vpu3"],
+#  "gz.img": ["gz1", "gz2"],
+#  "lk.img": ["lk", "lk2"],
+#  "logo.img": ["logo"],
+#  "md1img.img": ["md1img"],
+#  "preloader.img": ["preloader", "preloader_backup"],
+#  "scp.img": ["scp1", "scp2"],
+#  "spmfw.img": ["spmfw"],
+#  "sspm.img": ["sspm_1", "sspm_2"],
+#  "tee.img": ["tee1", "tee2"]
 }
 
 ADDITIONAL_IMAGES = {
