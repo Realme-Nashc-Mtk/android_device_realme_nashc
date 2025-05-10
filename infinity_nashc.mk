@@ -13,10 +13,22 @@ $(call inherit-product, device/realme/nashc/device.mk)
 # Addons
 TARGET_HAS_UDFPS := true
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Infinity
+INFINITY_BUILD_TYPE := UNOFFICIAL
 
-PRODUCT_NAME := lineage_nashc
+# Maintainer Name
+INFINITY_MAINTAINER := Rakhshan
+
+# Whether the package includes System BLURS
+TARGET_SUPPORTS_BLUR := true
+
+# Whether the compiled package ships Google Apps:
+WITH_GAPPS := true
+
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+
+PRODUCT_NAME := infinity_nashc
 PRODUCT_DEVICE := nashc
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := Realme

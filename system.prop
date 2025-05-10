@@ -11,3 +11,10 @@ persist.sysui.disableBlur=true
 
 # Zygote
 zygote.critical_window.minute=10
+
+# InfinityX
+ro.product.marketname=Realme 8
+ro.infinity.soc=Mediatek Helio G95
+ro.infinity.battery=5000 mAh
+ro.infinity.display=1080 x 2400, 60 Hz
+ro.infinity.camera=64MP + 8MP + 2MP + 2MP, 16MP
