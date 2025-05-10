@@ -13,6 +13,30 @@ $(call inherit-product, device/realme/nashc/device.mk)
 # Addons
 TARGET_HAS_UDFPS := true
 
+# Define rear camera specs (multiple sensors supported)
+AXION_CAMERA_REAR_INFO := 64,8,2,2  # Example: 50MP + 48MP
+
+# Define front camera specs
+AXION_CAMERA_FRONT_INFO := 16  # Example: 42MP
+
+# Maintainer name (use "_" for spaces, e.g., "rmp_22" → "rmp 22" in UI)
+AXION_MAINTAINER := Rakhshan
+
+# Processor name (use "_" for spaces)
+AXION_PROCESSOR := Mediatek_Helio_G95
+
+# Define small and big core groups
+AXION_CPU_SMALL_CORES := 0,1,2,3,4,5
+AXION_CPU_BIG_CORES := 6,7 (builders can exclude prime clusters here)
+
+AXION_CPU_BG := 0-1
+# Background cores used for foreground cpusets
+AXION_CPU_FG := 0-7
+# CPU cores that will be used when limiting other cpusets except top-app
+AXION_CPU_LIMIT_BG := 0-3
+# Wether to enable debugging for adb logcat purposes
+AXION_DEBUGGING_ENABLED := true
+
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
